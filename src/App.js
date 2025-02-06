@@ -4,8 +4,16 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ContextProvider } from './providers/ContextProvider';
 import Layout from './layouts/Layout';
 import Home from './pages/Home';
+import useFetch from "../hooks/useFetch";
+
 
 function App() {
+
+  // Ejemplo de fetch:
+  // const { data, loading, error } = useFetch('https://rickandmortyapi.com/api/character');
+
+
+
   return (
     <Router>
       <div className="App">
